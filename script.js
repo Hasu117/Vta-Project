@@ -44,6 +44,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu
     const mobileMenu = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
+    const contactForm = document.getElementById('contact-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactForm.style.display = 'none';
+            confirmationMessage.style.display = 'block';
+        });
+    }
+
+
+    // Appointment Form Submission
+    const appointmentForm = document.getElementById('appointment-form');
+    const appointmentConfirmation = document.getElementById('appointment-confirmation');
+
+    if (appointmentForm && appointmentConfirmation) {
+        appointmentForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop the form from submitting and reloading the page
+            appointmentForm.style.display = 'none';
+            appointmentConfirmation.style.display = 'block';
+        });
+    }
 
     mobileMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');

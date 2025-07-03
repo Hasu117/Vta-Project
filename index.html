@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinary Center</title>
+    <title>Happy Pet</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,14 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>Veterinary Center</h1>
+                <h1>Happy Pet</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
                 <li><a href="login.html" class="btn primary nav-login-btn">Login</a></li>
             </ul>
             <div class="language-selector">
@@ -50,7 +51,7 @@
                 <h1>Your Pet's Health is Our Priority</h1>
                 <p>Providing compassionate and professional veterinary care for your beloved pets.</p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn primary">Book Appointment</a>
+                    <a href="appointment.html" class="btn primary">Book Appointment</a>
                 </div>
             </div>
         </div>
@@ -134,26 +135,30 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Book Appointment</h2>
+            <h2>Contact Us</h2>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="info-item"><i class="fas fa-map-marker-alt"></i><p>Galle,Mapalagama Road,<br>Wanduramba</p></div>
                     <div class="info-item"><i class="fas fa-phone"></i><p>+1 234 567 890</p></div>
                     <div class="info-item"><i class="fas fa-envelope"></i><p>info@vetclinic.com</p></div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <textarea placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn primary">Send Message</button>
                 </form>
+                    <div id="confirmation-message" style="display: none;">
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully.</p>
+                    </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Veterinary Center. All rights reserved.</p>
+            <p>&copy; 2025 Happy Pet. All rights reserved.</p>
         </div>
     </footer>
 
